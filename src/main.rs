@@ -29,14 +29,14 @@ fn main(){
     }
 
     //area homework
-    println!("circle area : {}", calc_area(&Circle{
+    print_area(&Circle{
         radius: 1.0
-    }));
-    println!("circle area : {}", calc_area(&Triangle{
+    });
+    print_area(&Triangle{
         high: 1.0,
         bottom: 2.0
-    }));
-    println!("circle area : {}", calc_area(&Square{
+    });
+    print_area(&Square{
         side: 2.0
-    }));
+    });
 }

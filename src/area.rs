@@ -34,6 +34,6 @@ impl Area for Square{
     }
 }
 
-pub fn calc_area<T: Area>(graph: &T) -> f32{
-    graph.area()
+pub fn print_area<T: Area>(graph: &T){
+    println!("type : {} , area : {}", std::any::type_name::<T>(), graph.area());
 }
